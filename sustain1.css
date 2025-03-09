@@ -1,0 +1,156 @@
+/*Global Backgrounds, Colors, and Widths*/
+*{box-sizing: border-box;}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Verdana, Verdana, Geneva, Tahoma, sans-serif;
+    margin: zero;
+}
+
+header, ul, nav, #content-wrapper{
+    width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    color: #008000;
+}
+
+/* Logo */
+header img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header{
+    position:relative;
+}
+
+header h1, nav ul {
+    padding-left: 50px;
+
+}
+
+/* Navbar*/
+nav {
+    background-color:#008000;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav a {
+    display: inline-block;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold; 
+}
+
+nav a:hover {
+    background-color: black;
+    color: #9ae39a;
+}
+
+/* Home Page Main Image */
+
+/* Sidebar */
+aside section {
+    background-color: white;
+    margin-bottom: 1rem;
+    border: 1px solid #008000;
+
+}
+
+aside h3{
+    background-color: #008000;
+    color: white;
+    padding: .5rem;
+    margin: zero;
+}
+
+aside a{
+    display: inline-block;
+    padding: .5rem;
+}
+/* Home Page Columns */
+#content-wrapper {
+    display: flex;
+}
+#content-wrapper aside {
+    background-color: #ccc;
+    margin-right: 1rem;
+    padding: .5rem;
+    position: relative;
+    top: 20px;
+    order: -1;
+    flex: 0.1;
+}
+
+#content-wrapper aside h2 {
+    margin-top: 0;
+    white-space: nowrap;
+}
+
+#content-wrapper main {
+    order: 1;
+    flex: 0.4;
+}
+
+/* Home Page Bottom Columns */
+main article img {
+    border: double 3px #333;
+    float: left;
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+main section {
+    display: flex;
+}
+
+main section div {  
+    background-color: #e7ffe7;
+    border: 1px solid #008000;
+    border-radius: 10px;
+    flex: 1;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+
+}
+
+main section div:last-child {
+    margin-right: 0;
+}
+
+main section div h2 {
+    background-color: #008000;
+    color: white;
+    border-radius: 10px 10px 0 0;
+    margin-top: 0;
+    text-align: center;
+    padding: .5rem;
+    width: 100%;
+    
+
+}
+
+main section div img {
+    border: double 3px #333;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
